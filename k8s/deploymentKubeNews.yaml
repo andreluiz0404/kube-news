@@ -11,21 +11,21 @@ spec:
     metadata:
       labels:
         app: kube-news
-      spec:
-        containers:
-        - name: site
-          image: aluizsys/kube-news:latest
-          ports:
-          - containerPort: 8080
-          env:
-          - name: DB_DATABASE
-            value: "kubenews"
-          - name: DB_USERNAME
-            value: "kubenews"
-          - name: DB_PASSWORD
-            value: "Pg#123"
-          - name: DB_HOST
-            value: "postgre"
+    spec:
+      containers:
+      - name: site
+        image: aluizsys/kube-news:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DB_DATABASE
+          value: "kubenews"
+        - name: DB_USERNAME
+          value: "kubenews"
+        - name: DB_PASSWORD
+          value: "Pg#123"
+        - name: DB_HOST
+          value: "postgre"
 
 ---
 
